@@ -30,14 +30,14 @@ const alunosTurmaB = [
     }
 ]
 
+
+const MediaTurmaA = calculaMediaTurma(alunosTurmaA)
+const MediaTurmaB = calculaMediaTurma(alunosTurmaB)
+
 function calculaMediaTurma(alunos){
     return(alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
 }
 
-
-
-const MediaTurmaA = calculaMediaTurma(alunosTurmaA)
-const MediaTurmaB = calculaMediaTurma(alunosTurmaB)
 
 enviaMensagemMedia(MediaTurmaA,"Turma A")
 enviaMensagemMedia(MediaTurmaB,"Turma B")
